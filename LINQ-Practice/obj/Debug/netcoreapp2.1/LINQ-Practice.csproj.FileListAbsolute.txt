@@ -1,0 +1,11 @@
+/Users/timmac/CS-Projects/LINQ-Practice/LINQ-Practice/bin/Debug/netcoreapp2.1/LINQ-Practice.deps.json
+/Users/timmac/CS-Projects/LINQ-Practice/LINQ-Practice/bin/Debug/netcoreapp2.1/LINQ-Practice.runtimeconfig.json
+/Users/timmac/CS-Projects/LINQ-Practice/LINQ-Practice/bin/Debug/netcoreapp2.1/LINQ-Practice.runtimeconfig.dev.json
+/Users/timmac/CS-Projects/LINQ-Practice/LINQ-Practice/bin/Debug/netcoreapp2.1/LINQ-Practice.dll
+/Users/timmac/CS-Projects/LINQ-Practice/LINQ-Practice/bin/Debug/netcoreapp2.1/LINQ-Practice.pdb
+/Users/timmac/CS-Projects/LINQ-Practice/LINQ-Practice/obj/Debug/netcoreapp2.1/LINQ-Practice.csprojAssemblyReference.cache
+/Users/timmac/CS-Projects/LINQ-Practice/LINQ-Practice/obj/Debug/netcoreapp2.1/LINQ-Practice.csproj.CoreCompileInputs.cache
+/Users/timmac/CS-Projects/LINQ-Practice/LINQ-Practice/obj/Debug/netcoreapp2.1/LINQ-Practice.AssemblyInfoInputs.cache
+/Users/timmac/CS-Projects/LINQ-Practice/LINQ-Practice/obj/Debug/netcoreapp2.1/LINQ-Practice.AssemblyInfo.cs
+/Users/timmac/CS-Projects/LINQ-Practice/LINQ-Practice/obj/Debug/netcoreapp2.1/LINQ-Practice.dll
+/Users/timmac/CS-Projects/LINQ-Practice/LINQ-Practice/obj/Debug/netcoreapp2.1/LINQ-Practice.pdb
