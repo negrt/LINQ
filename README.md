@@ -12,5 +12,5 @@ A console application I used to practice LINQ. See program.cs for queries.
 
 # Image
 
-#### Expected Outputi
+#### Expected Output
 ![Image of LINQ Output](https://github.com/negrt/cv/blob/master/images/LINQ.png?raw=true)
