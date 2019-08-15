@@ -5,10 +5,5 @@ namespace LINQ_Practice
     {
         public string Name { get; set; }
         public int OwnerID { get; set; }
-
-        public Owner()
-        {
-            
-        }
     }
 }

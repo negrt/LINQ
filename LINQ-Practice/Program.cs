@@ -14,7 +14,8 @@ using System.Linq;
 //
 // What I learned: How to initialize variables using LINQ with objects, how to
 // convert an array to a list and list to an array, How to make a new collection
-// only taking certain attributes by using select,
+// by only taking certain attributes using select, Joins, Group Joins, Where,
+// Orderby, select new.
 //
 //******************************************************************************
 namespace LINQ_Practice
@@ -33,6 +34,10 @@ namespace LINQ_Practice
 
             QueryAnimalData();
         }
+
+        //**********************************************************************
+        //QueryStringArray()
+        //**********************************************************************
 
         // Dog Names with Spaces Query // String LINQ practice
         static void QueryStringArray()
@@ -54,6 +59,10 @@ namespace LINQ_Practice
 
             Console.WriteLine();
         }
+
+        //**********************************************************************
+        //QueryIntArray()
+        //**********************************************************************
 
         // Numbers Query // Integer LINQ practice
         static int[] QueryIntArray()
@@ -99,6 +108,11 @@ namespace LINQ_Practice
             return arrayGreaterThan20;
         }
 
+
+        //**********************************************************************
+        //QueryArrayList()
+        //**********************************************************************
+
         static void QueryArrayList()
         {
             ArrayList Animals = new ArrayList()
@@ -135,7 +149,7 @@ namespace LINQ_Practice
             // Have to convert array list into Enumerable for LINQ (or will get build error)
             var AnimalsEnum = Animals.OfType<Animal>();
 
-            // 
+            // LINQ
             var smallAnimals = from smAnimals in AnimalsEnum
                                where smAnimals.Height <= 50
                                orderby smAnimals.Name
@@ -150,6 +164,11 @@ namespace LINQ_Practice
 
         }
 
+        //**********************************************************************
+        //QueryCollection()
+        //**********************************************************************
+
+        // Big dogs
         static void QueryCollection()
         {
             var animalList = new List<Animal>()
@@ -176,6 +195,7 @@ namespace LINQ_Practice
                 },
             };
 
+            // LINQ
             var bigDogs = from dog in animalList
                           where (dog.Weight > 60) &&
                           (dog.Height >= 25)
@@ -190,7 +210,9 @@ namespace LINQ_Practice
             Console.WriteLine();
         }
 
-
+        //**********************************************************************
+        //QueryAnimalData()
+        //**********************************************************************
 
         static void QueryAnimalData()
         {
@@ -243,8 +265,9 @@ namespace LINQ_Practice
 
             };
 
+            // LINQ
             // Take only the name and height from Animals
-            // make new collection with only name and height
+            // in other words make new collection with only name and height
             var nameHeight = from a in animals
                              select new
                              {
@@ -260,14 +283,18 @@ namespace LINQ_Practice
             }
             Console.WriteLine();
 
-            // Inner Join // Join base off equality of Animal ID and Owner ID
+
+
+
+
+            // LINQ // Inner Join // Join base off equality of Animal ID and Owner ID
             var innerJoin = from animal in animals 
                             join owner in owners
                             on animal.AnimalID equals owner.OwnerID
                             select new
                             {
                                 OwnerName = owner.Name, // for i.OwnerName returns name
-                                AnimalName = animal.Name // Gives access
+                                AnimalName = animal.Name // Gives access to name
                             };
 
             foreach (var i in innerJoin)
@@ -277,7 +304,12 @@ namespace LINQ_Practice
 
             Console.WriteLine();
 
-            // Group Join // 
+
+
+
+
+
+            // LINQ // Group Join // Store ownergroup in groupJoin
             var groupJoin = from owner in owners
                             orderby owner.OwnerID
 
@@ -304,9 +336,9 @@ namespace LINQ_Practice
                     Console.WriteLine("* " + animal.Name); // Print Animal
                 }
             }
+
+
+
         }
-
-
-
     }
 }
